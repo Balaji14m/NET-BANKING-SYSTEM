@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style7.css') }}">
+    <title>Admin</title>
+    <script>
+        fetch("customer.json")
+        .then(respone => respone.json())
+        .then(data => showinfo(data));
+
+        function showinfo(data){
+            console.log(data)
+        }
+    </script>
+</head>
+<body align="center">
+  <h1>hello</h1>
+
+<img src="{{ url_for('static',filename='styles/IM2.jpg') }}">
+
+</body>
+</html>
